@@ -29,5 +29,17 @@
             }
             return sum;
         }
+
+        //Trabalhando com o modificador ref
+        public static void Triple(ref int x)
+        {
+            x = x * 3;
+        }
+
+        //Trabalhando com o modificador out
+        public static void Triple(int origin, out int result)
+        {
+            result = origin * 3;
+        }
     }
 }

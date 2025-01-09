@@ -1,9 +1,23 @@
-﻿namespace POO_CSharp_P7
+﻿using System;
+
+namespace POO_CSharp_P7
 {
     internal class Program
     {
         private static void Main(string[] args)
         {
+            //Trabalhando com o modificador ref
+            int a = 10;
+            Calculator.Triple(ref a);
+            Console.WriteLine(a);
+            Console.WriteLine();
+
+            //trabalhando com o modificador out
+            int triple;
+            Calculator.Triple(a, out triple);
+            Console.WriteLine(triple);
+            Console.WriteLine();
+
             //Versão sem modificador
             Console.WriteLine("Versão sem modificador");
             int s1 = Calculator.Sum(new int[] { 2, 3 });
