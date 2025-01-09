@@ -6,6 +6,19 @@ namespace POO_CSharp_P7
     {
         private static void Main(string[] args)
         {
+            //Sintaxe opcional: laço foreach
+            string[] vect = new string[] { "Maria", "Bob", "Alex" };
+
+            for (int i = 0; i < vect.Length; i++)
+            {
+                Console.WriteLine(vect[i]);
+            }
+            Console.WriteLine("------------------------------------");
+            foreach (string obj in vect)
+            {
+                Console.WriteLine(obj);
+            }
+            Console.WriteLine();
             //Trabalhando com o modificador ref
             int a = 10;
             Calculator.Triple(ref a);
